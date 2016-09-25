@@ -1,0 +1,11 @@
+b 5
+c
+B *
+w $arr[$#arr][$#arr]
+c 
+c
+c
+c
+W *
+q
+

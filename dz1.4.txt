@@ -1,0 +1,2 @@
+perl -d dz1.3.pl
+source debug.txt
