@@ -1,0 +1,1 @@
+perl -lanF';' -e 'if($F[4] > 1024*1024) {$k++; print $F[-1]}; END {print"$. $k"}' 1.txt 
