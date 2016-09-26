@@ -1,5 +1,4 @@
-open(1,"<1.txt");
-while ( <1> )
+while ( <> )
 {
   chomp;
   push @arr, [ split /;/ ];
