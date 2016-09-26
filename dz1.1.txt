@@ -1,1 +1,1 @@
-ls -l | perl -ane 'if ($.>1) {$,=";"; print @F[0..7]; $,=" "; print";@F[8..$#F]\n"}' > 1
+ls -l | perl -ne 'if ($.>1) {@F=split(/\s/, $_);@K=split(/\s+/,$_); $,=";";print @K[0..7];for $i(0..@F){if($F[$i]eq$K[7]){print";@F[$i+1..$#F]\n"; last}}}'
